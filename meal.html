@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Meal Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main row">
+      <div class="column">
+        <h1>Hungry?</h1>
+        <h4>Click below for a random meal</h4>
+        <button id="btn" class="button-primary">Get meal &#127790;</button>        
+      </div>
+    </div>
+    <div id="meal-1" class="row hidden">
+      <div class="six columns">
+        <img id="image" src="https://www.themealdb.com/images/media/meals/yqqqwu1511816912.jpg" alt="">
+        <ul class="category">
+          <li><strong>Category:</strong> <span id="category"></span> </li>
+          <li><strong>Area:</strong> <span id="area"></span> </li>
+          <li><strong>Tags:</strong> <span id="tags"></span> </li> 
+        </ul>       
+        <h5>Ingredients</h5>
+        <ul id="ingredient-list" class="ingredients">
+          
+        </ul>
+      </div>
+      <div class="six columns">
+        <h4 id="title">Title</h4>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio culpa debitis corporis quasi voluptatem. Natus maiores ipsum sit asperiores animi?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui iure laudantium nobis est, veritatis assumenda, quae vel illum ad, natus expedita cupiditate itaque eum. Officiis nulla omnis cupiditate ducimus sequi?
+        </p>
+      </div>
+    </div>
+    <div id="meal-2" class="row hidden">
+      <div class="twelve columns">
+        <h5>Video Recipe</h5>
+        <iframe id="video" class="video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>  
+    </div>
+    
+  <script src="meal.js"></script>  
+</body>
+</html>

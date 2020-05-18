@@ -1,0 +1,46 @@
+body {
+  margin-top: auto;
+  background-color: rgba(230,230,230,0.8);
+}
+.hidden {
+  display: none;
+}
+
+.main {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#image {
+  width: 100%;
+}
+
+.column p, .column h2 {
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.category li {
+  margin-bottom: 0.5rem;
+}
+.ingredients li {
+  margin-bottom: 0;
+}
+h5 {
+  margin-bottom: 1rem;
+}
+.video {
+  width: 100%;
+  margin-bottom: 4rem;
+  min-height: 300px;
+  max-height: 600px;
+}
+
+@media (min-width: 550px) {
+  #image {
+    width: 95%;
+  }
+}
