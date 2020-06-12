@@ -10,12 +10,16 @@ const mealVideo = document.getElementById("video")
 const mealTitle = document.getElementById("title")
 const mealDescription = document.getElementById("description")
 const ingredientList = document.getElementById("ingredient-list")
-getMeal();
+
+
 
 function getMeal()  {
   fetch(url)
   .then((resp) => resp.json()) // Transform the data into json
   .then(function(data) {
+    spinner.setAttribute('hidden', '');
+
+    //setTimeout(setMealInfo ,5000,data.meals[0])
     setMealInfo(data.meals[0])
     })
 }
@@ -53,7 +57,23 @@ function getVidString(vidStr) {
 return "https://www.youtube.com/embed/" + vidStr.slice(32,45)
 }
 
+
+const spinner = document.getElementById("spinner");
+
 button.addEventListener("click", function() {
-  meal_1.classList.remove("hidden")
-  meal_2.classList.remove("hidden")
+
+  meal_1.classList.add("hidden")
+  meal_2.classList.add("hidden")
+
+  spinner.removeAttribute('hidden');
+  
+  getMeal();
+
+  setTimeout(function(){
+    meal_1.classList.remove("hidden")
+    meal_2.classList.remove("hidden")
+  }, 1000)
 })
+
+
+
