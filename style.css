@@ -80,10 +80,6 @@ footer .btn::after {
 footer .btn:hover::after {
   transform: scaleX(1);
 }
-
-
-
-
 footer .far {
   margin-left: 0;
 }
